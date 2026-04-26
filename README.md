@@ -1,6 +1,6 @@
 # Power Gating
 
-This project contains Cadence/OpenAccess circuit designs and simulations for logic circuits using power gating techniques.
+This project contains Cadence/OpenAccess circuit designs and simulations for logic circuits that use power gating techniques.
 
 The repository stores schematic cells, symbols, testbenches, and supporting documentation for studying power gating on basic logic blocks such as NAND, XOR, BUFFER, DFF, and FULL ADDER circuits.
 
@@ -9,7 +9,7 @@ The repository stores schematic cells, symbols, testbenches, and supporting docu
 - Designs for basic logic gates.
 - Comparisons between regular circuits, power-gated circuits, and dual/diode variants.
 - Cadence/OpenAccess schematic, symbol, and testbench databases.
-- A Word document with notes and observations related to the project.
+- A Word document with notes and observations related to the Vhold signal path.
 
 ## Repository Structure
 
@@ -23,7 +23,7 @@ The repository stores schematic cells, symbols, testbenches, and supporting docu
 | `Tatcamach_2/` | Extended design set with BUFFER, NAND, XOR, DFF, FULL ADDER, and power gating variants. |
 | `CUOI_KY_SYMBOL/` | Top-level cells, symbols, and testbenches used for final integration/report work. |
 | `TEST/` | Test cells and testbenches for NAND/XOR circuits. |
-| `Đường xanh lá đầu tiên là Vhold.docx` | Notes related to the Vhold signal path. |
+| `vhold-signal-notes.docx` | Notes related to the Vhold signal path. |
 
 ## Data Format
 
@@ -48,6 +48,12 @@ This project follows the Cadence/OpenAccess library directory structure. Importa
 3. Load the required libraries from directories such as `LogicGates`, `Power_gating_ver3`, `Tatcamach_2`, and `CUOI_KY_SYMBOL`.
 
 4. Open schematic cells or testbenches from Library Manager to inspect, edit, and run simulations.
+
+## Naming Notes
+
+The Word document was renamed to an English, repository-friendly filename: `vhold-signal-notes.docx`.
+
+Cadence/OpenAccess library and cell directory names are intentionally kept unchanged. Renaming those directories directly in Git can break schematic references and library metadata, so any future library/cell rename should be done inside Cadence Virtuoso first and then committed to Git.
 
 ## Notes For Updates
 
