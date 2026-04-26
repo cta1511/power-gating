@@ -1,65 +1,66 @@
 # Power Gating
 
-Project thiết kế và mô phỏng các mạch logic có áp dụng kỹ thuật power gating trên môi trường Cadence/OpenAccess.
+This project contains Cadence/OpenAccess circuit designs and simulations for logic circuits using power gating techniques.
 
-Repository này lưu các cell schematic, symbol, testbench và tài liệu liên quan đến việc khảo sát power gating cho một số mạch logic cơ bản như NAND, XOR, BUFFER, DFF và FULL ADDER.
+The repository stores schematic cells, symbols, testbenches, and supporting documentation for studying power gating on basic logic blocks such as NAND, XOR, BUFFER, DFF, and FULL ADDER circuits.
 
-## Nội Dung Chính
+## Overview
 
-- Thiết kế các cổng logic cơ bản.
-- So sánh các phiên bản mạch thường, mạch có power gating và các biến thể dual/diode.
-- Lưu cell schematic, symbol và testbench dưới dạng OpenAccess database.
-- Kèm tài liệu ghi chú kết quả/nhận xét trong file Word.
+- Designs for basic logic gates.
+- Comparisons between regular circuits, power-gated circuits, and dual/diode variants.
+- Cadence/OpenAccess schematic, symbol, and testbench databases.
+- A Word document with notes and observations related to the project.
 
-## Cấu Trúc Thư Mục
+## Repository Structure
 
-| Thư mục / File | Mô tả |
+| Path | Description |
 | --- | --- |
-| `LogicGates/` | Các cổng logic cơ bản: AND, OR, NOT, XOR, BUFFER. |
-| `Power_gating/` | Thiết kế power gating ban đầu. |
-| `Power_gating_ver2/` | Phiên bản power gating thứ hai và cell `Ver2`. |
-| `Power_gating_ver3/` | Phiên bản power gating thứ ba, gồm schematic và symbol. |
-| `Tatcamach_1/` | Các mạch NAND, FULL ADDER, DFF và các biến thể 1MOS/3MOS. |
-| `Tatcamach_2/` | Bộ thiết kế mở rộng với BUFFER, NAND, XOR, DFF, FULL ADDER và các biến thể power gating. |
-| `CUOI_KY_SYMBOL/` | Các cell top, symbol và testbench dùng cho phần tổng hợp/báo cáo cuối kỳ. |
-| `TEST/` | Các cell test và testbench cho NAND/XOR. |
-| `Đường xanh lá đầu tiên là Vhold.docx` | Tài liệu ghi chú liên quan đến đường tín hiệu Vhold. |
+| `LogicGates/` | Basic logic gates: AND, OR, NOT, XOR, and BUFFER. |
+| `Power_gating/` | Initial power gating design. |
+| `Power_gating_ver2/` | Second version of the power gating design, including the `Ver2` cell. |
+| `Power_gating_ver3/` | Third version of the power gating design, including schematic and symbol views. |
+| `Tatcamach_1/` | NAND, FULL ADDER, DFF, and 1MOS/3MOS circuit variants. |
+| `Tatcamach_2/` | Extended design set with BUFFER, NAND, XOR, DFF, FULL ADDER, and power gating variants. |
+| `CUOI_KY_SYMBOL/` | Top-level cells, symbols, and testbenches used for final integration/report work. |
+| `TEST/` | Test cells and testbenches for NAND/XOR circuits. |
+| `Đường xanh lá đầu tiên là Vhold.docx` | Notes related to the Vhold signal path. |
 
-## Định Dạng Dữ Liệu
+## Data Format
 
-Project sử dụng cấu trúc thư mục của Cadence/OpenAccess. Các file quan trọng gồm:
+This project follows the Cadence/OpenAccess library directory structure. Important file types include:
 
-- `sch.oa`: dữ liệu schematic.
-- `symbol.oa`: dữ liệu symbol.
-- `master.tag`: thông tin view của cell.
-- `data.dm`, `.oalib`, `cdsinfo.tag`: metadata của thư viện/cell.
-- `thumbnail_128x128.png`: ảnh xem trước của schematic/symbol.
+- `sch.oa`: schematic data.
+- `symbol.oa`: symbol data.
+- `master.tag`: view metadata for a cell.
+- `data.dm`, `.oalib`, `cdsinfo.tag`: library/cell metadata.
+- `thumbnail_128x128.png`: preview image for a schematic or symbol view.
 
-## Cách Sử Dụng
+## Usage
 
-1. Clone repository:
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/cta1511/power-gating.git
    ```
 
-2. Mở project trong môi trường Cadence Virtuoso/OpenAccess.
+2. Open the project in a Cadence Virtuoso/OpenAccess environment.
 
-3. Nạp các thư viện cần dùng từ các thư mục như `LogicGates`, `Power_gating_ver3`, `Tatcamach_2`, `CUOI_KY_SYMBOL`.
+3. Load the required libraries from directories such as `LogicGates`, `Power_gating_ver3`, `Tatcamach_2`, and `CUOI_KY_SYMBOL`.
 
-4. Mở các cell schematic hoặc testbench từ Library Manager để xem, chỉnh sửa và chạy mô phỏng.
+4. Open schematic cells or testbenches from Library Manager to inspect, edit, and run simulations.
 
-## Lưu Ý Khi Cập Nhật Project
+## Notes For Updates
 
-Repository đã bỏ qua các file tạm và file lock của hệ thống/Cadence, bao gồm:
+The repository ignores local system files, temporary files, and Cadence lock files, including:
 
 - `.DS_Store`
 - `*.cdslck*`
 - `sch.oa.cadence.*.tmp.*`
-- thư mục kết quả tạm `.tmpADEDir`
+- temporary `.tmpADEDir` result directories
+- Microsoft Office temporary files matching `~$*`
 
-Khi commit thay đổi mới, chỉ nên đưa lên các file thiết kế, symbol, schematic, testbench và tài liệu cần lưu trữ.
+When committing new changes, only include design files, symbols, schematics, testbenches, and documents that should be preserved.
 
-## Tác Giả
+## Author
 
-Project được thực hiện phục vụ việc thiết kế và khảo sát mạch power gating.
+This project was created for designing and studying power gating circuits.
