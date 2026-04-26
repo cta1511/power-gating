@@ -1,6 +1,9 @@
 .DS_Store
 **/.DS_Store
 
+# Microsoft Office temporary files
+~$*
+
 # Cadence/OpenAccess temporary files
 sch.oa.cadence.*.tmp.*
 **/sch.oa.cadence.*.tmp.*
