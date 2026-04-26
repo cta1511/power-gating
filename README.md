@@ -145,4 +145,4 @@ Cadence/OpenAccess library and cell directory names are intentionally kept uncha
 
 ## Author
 
-Cao Thành An, GitHub: [cta1511](https://github.com/cta1511)
+Cao Thanh An, GitHub: [cta1511](https://github.com/cta1511)
