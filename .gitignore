@@ -1,0 +1,8 @@
+.DS_Store
+**/.DS_Store
+
+# Cadence/OpenAccess temporary files
+sch.oa.cadence.*.tmp.*
+**/sch.oa.cadence.*.tmp.*
+*.cdslck*
+**/.tmpADEDir*/
