@@ -143,6 +143,6 @@ When committing updates, include only design files, schematic/symbol databases, 
 
 Cadence/OpenAccess library and cell directory names are intentionally kept unchanged in Git. Renaming those directories directly in the filesystem can break schematic references, symbol links, or library metadata. If a cell or library must be renamed, rename it inside Cadence Virtuoso first, verify that all references still resolve, and then commit the resulting database changes.
 
-## Author
+## Contributors
 
-Cao Thanh An, GitHub: [cta1511](https://github.com/cta1511)
+- [cta1511](https://github.com/cta1511)
